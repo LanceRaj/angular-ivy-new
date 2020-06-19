@@ -1,0 +1,20 @@
+<hello name="{{ name }}"></hello>
+<p>
+  
+ 
+  Browser Locale = {{locale1}}
+   <br>
+ 
+  Decimal Number = {{numner}}
+  <br>
+    <br>
+      Enter a value:
+	<input type="number" lang=locale1 [(ngModel)]="myTextVal"> 
+  <br>
+ Currency= {{myTextVal | currency:'USD':'symbol' }}
+<br>
+<br>
+   Date Format = {{Dateformat}}
+    <br>  
+   Date = {{ dateVal | date: Dateformat }}
+</p>
